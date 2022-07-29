@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Montserrat:wght@500;700&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+}
+
+
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+
+nav{
+    background:#fff;
+    height:80px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    box-shadow:0px 0px 8px #c0bdbd;
+    padding:2% 8%;
+}
+
+.logo img{
+    width:100px;
+}
+
+
+nav ul li{
+    list-style:none;
+    display:inline-block;
+    margin:10px 20px;
+}
+
+
+
+nav ul li a{
+    color:#000;
+    text-decoration:none;
+    font-size:17px;
+    font-weight:400;
+}
+
+
+
+nav ul li a:hover{
+    color:#00cec9;
+}
+
+
+.bk-btn{
+    padding:10px 20px;
+    background:#e75601;
+    color:#fff;
+    border-radius:5px;
+    font-weight:700;
+    text-decoration:none;
+}
+
+
+
+
+
+#slider{
+    width:100%;
+    min-height:600px;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/mole-1.jpg');
+    background-size:cover;
+    background-position:center right;
+    background-attachment:fixed;
+    justify-content:center;
+    animation:slider 16s ease-in-out infinite;
+}
+
+
+@keyframes slider{
+    0%, 100%{
+        background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/mole-1.jpg');
+    }
+
+    20%{
+        background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/kakum.jpg');
+    }
+
+   25%{
+        background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/mole-national-park-1.jpg');
+    }
+
+    50%{
+        background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/Elmina-Castle.jpg');
+    }
+
+    75%{
+        background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/Elmina-Castle.jpg');
+    }
+
+    100%{
+        background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/Door-of-Return-Cape-Coast.jpg');
+    }
+}
+
+
+
+.slider-content{
+    padding:10% 8%;
+}
+
+.slider-content h3{
+    color:#fff;
+    font-weight:normal;
+    font-size:20px;
+}
+
+.slider-content h1{
+    font-size:62px;
+    color:#fff;
+    margin-top:5px;
+}
+
+
+.btn{
+    padding:13px 25px;
+    background:#00cec9;
+    color:#fff;
+    border:none;
+    outline:none;
+    font-weight:800;
+    border-radius:5px;
+    margin-top:20px;
+    transition:.3s ease;
+}
+
+
+.slider-content .btn:hover{
+    background:none;
+    border:2px solid #fff;
+}
+
+
+/* END OF HEADER PAGE */
+
+
+
+
+/* ABOUT SECTION STYLING */
+
+
+
+.about{
+ padding:10% 8%;
+}
+
+
+.row{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+
+
+
+.about-col-1{
+    flex-basis:40%;
+}
+
+.about-col-1 img{
+    max-width:80%;
+    border-radius:15px;
+}
+
+.about-col-2{
+    flex-basis:60%;
+}
+
+
+
+
+
+
+.about-col-2 h2{
+    font-size:36px;
+    margin-bottom:16px;
+}
+
+
+
+.about-col-2 h2::after{
+    content:'';
+    width:100px;
+    height:5px;
+    background:#00cec9;
+    display:block;
+    border-radius:6px;
+    margin:5px 0;
+}
+
+.about-col-2 h3{
+    font-size:50px;
+}
+
+
+
+.about-col-2 p{
+    line-height:1.7;
+    color:#777;
+    font-weight:normal;
+    margin-top:10px;
+    font-size:15px;
+}
+
+
+/* END OF ABOUT SECTION STYLING*/
+
+
+/* SERVICES SECTION STYLING */
+
+#services{
+    padding:50px 0
+}
+
+
+.services{
+    width:100%;
+    min-height:250px;
+    background-image:linear-gradient(rgba(62, 196, 230, 0.6),rgba(44, 118, 202, 0.6)),url('../images/beach.jpg');
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    overflow:hidden;
+}
+
+
+.services h1{
+    font-size:36px;
+    color:#fff;
+    text-align:center;
+}
+
+.services h1:after{
+    content:'';
+    width:100px;
+    height:5px;
+    background:#fff;
+    display:block;
+    border-radius:6px;
+    margin:5px auto;
+}
+
+
+.services-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:40px;
+    padding:10% 8%;
+}
+
+
+.services-info{
+    background:#fff;
+    text-align:center;
+    margin:auto;
+    width:250px;
+    height:200px;
+    border-radius:10px;
+    transition:.5s;
+}
+
+
+.services-info:hover{
+    transform: scale(1.1);
+}
+
+
+
+.services-info i{
+    font-size:40px;
+    color:#00cec9;
+    padding:20px 0;
+    margin-top:20px;
+}
+
+.services-info h2{
+    font-size:20px;
+    font-weight:900;
+}
+
+
+/* END OF SERVICES SECTION STYLING */
+
+
+/* VISION AND MISSION STYLING */
+
+.vision{
+    width:100%;
+    margin:auto;
+    text-align:center;
+    padding-top:100px;
+}
+
+
+.vision h1{
+    text-align:center;
+    font-size:36px;
+}
+
+.vision h1:after{
+    content:'';
+    width:100px;
+    height:5px;
+    background:#00cec9;
+    display:block;
+    border-radius:6px;
+    margin:5px auto;
+}
+
+
+
+
+.vision-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:40px;
+    padding:10% 8%;
+}
+
+
+.vision-info{
+    text-align:center;
+    padding:20px;
+    border-radius:10px;
+    transition:.3s;
+    background:#fce3dc;
+}
+
+.vision-info h2{
+    font-size:25px;
+    margin-bottom:15px;
+}
+
+.vision-info p{
+    font-size:14px;
+    line-height:1.7;
+    color:#424242;
+}
+
+
+.vision-info:hover{
+    box-shadow:0px 0px 8px #949494;
+    transform: scale(1.1);
+}
+
+
+/* END OF VISION AND MISSION  STYLING */
+
+
+/* CALL TO ACTION */
+
+.cta{
+    margin:80px auto;
+    background-image:linear-gradient(rgba(5, 5, 5, 0.6),rgba(10, 10, 10, 0.6)),url('../images/image-1.jpg');
+    background-size:cover;
+    background-position:center right;
+    background-attachment:fixed;
+    text-align:center;
+    padding:100px 0;
+}
+
+
+.cta-info{
+    width:100%;
+    padding-top:80px;
+}
+
+
+
+.cta h2{
+    margin-bottom:50px;
+    color:#fff;
+}
+
+
+.cta a{
+    text-decoration:none;
+}
+
+
+/* END OF CTA SECTION */
+
+
+
+
+/*-----------CONTACT PAGE---------*/
+
+.location{
+    width:80%;
+    margin:auto;
+    padding:80px 0;
+}
+
+
+.location iframe{
+    width:100%;
+}
+
+
+.contact-us{
+    width:80%;
+    margin:auto;
+}
+
+
+.contact-col{
+    flex-basis:48%;
+    margin-bottom:30px;
+}
+
+.contact-col div{
+    display:flex;
+    align-items:center;
+    margin-bottom:40px;
+}
+
+.contact-col div .fa{
+    font-size:28px;
+    color:#00cec9;
+    margin:10px;
+    margin-right:30px;
+}
+
+
+.contact-col div p{
+    padding:0; 
+}
+
+.contact-col div h5{
+    font-size:20px;
+    margin-bottom:5px;
+    color:#555;
+    font-weight:400;
+}
+
+
+.contact-col input,.contact-col textarea{
+    width:100%;
+    padding:15px;
+    margin:0 0 17px;
+    border:1px solid #ccc;
+    outline:none;
+}
+
+/*-----------END OF CONTACT PAGE---------*/
+
+
+
+
+
+
+.footer{
+    background:#00cec9;
+    padding:50px;
+    text-align:center;
+    font-size:17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------- RESPONSIVE SECTION-------*/
+
+
+
+
+
+@media (max-width:700px){
+
+    .row{
+        flex-direction:column;
+    }
+
+
+    nav ul{
+        display:none;
+    }
+
+    nav .fa{
+        font-size:30px;
+        color:#000;
+        text-decoration:none;
+    }
+
+    .cta-info h2{
+        font-size:15px;
+        margin-bottom:30px;
+    }
+
+    .about-col-1 img{
+        margin-bottom:40px;
+    }
+  
+    
+}    
